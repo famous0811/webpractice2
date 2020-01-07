@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zeropen</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            font-family: 'Nanum Square',Gothic,sans-serif;
+        }
+        #header{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,.6);
+        }
+        .line{
+            width: 80px;
+            height: 3px; 
+            background-color: #fcc419;
+            display: inline-block;
+        }
+        .maintext{
+            margin-top: 15px;
+            font-size: 20px;
+            color: black;
+        }
+        .subtext{
+            font-size: 80px;
+            color: white;
+        }
+        #name{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #histoy{
+            margin: 90px 0px;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center ;
+            flex-wrap: wrap;
+        }
+        #curriculum{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 100px 0px;   
+        }
+        .curriculums{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 80px;
+        }
+        .text{
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+        .ball{
+            
+            left: 0;
+            width: 13px;
+            height: 13px;
+            background: #ffd43b;
+            border-radius: 50%;
+        }
+        #Histoy{
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .Explanation{
+            display: flex; 
+            flex-direction: column;
+            height: 300px;
+        }
+        .year{
+            display: flex; 
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .Line{
+            margin-left: 10px;
+            content: '';
+            width: 64px;
+            height: 0;
+            width: 60px;
+            border-top: 2px dashed #939393;
+        }
+        .box{
+            background-color: white; 
+            width: 240px;
+            height: 345px; 
+            margin: 30px 20px;
+        }
+    </style>
+</head>
+<script>
+    var Bewidth;
+    var nowidth;
+
+function resize(){
+        var width=document.getElementsByTagName('body')[0].offsetWidth;
+        if(width<1100)
+            alert("성공");
+}
+
+
+</script>
+<body>
+    <div id="header">
+        <div style="color: white;">Sunrin High School Game Development</div>
+        <div class="subtext">ZEROPEN</div>
+        <div class="line"></div>
+    </div>
+    <div id="histoy">
+        <div id="name">
+            <div class="maintext" style="margin-top: 0px;">멀티플랫폼 게임 개발 동아리</div>
+            <div class="maintext" style="font-size: 40px;">제로픈</div>
+            <div class="line" style="margin-top: 30px;"></div>
+        </div>
+        <div style="width: 400px; line-height: 24px; margin: 0px 50px 0px;"><p>선린 인터넷 고등학교 게임 개발 전문 동아리 제로픈입니다.
+            이곳 제로픈 에서는 선후배가 함께 게임 개발과 디자인에 대해 배우고 공부하며 여러 대회나 활동에 참가하고 있습니다.<br><br>
+
+            대중적인 게임 개발 엔진인 Unity, C++언어 기반의 자체적인 게임 엔진인 ZeroEngine을 사용한 PC게임 개발 뿐만이 아닌 모바일 플랫폼, VR/AR등 멀티플랫폼을 지향하고 있습니다.<br><br> 
+            게임 개발/디자인에 관심이 있거나 배우고 싶으신 분은 함께해주세요!</p></div>
+        
+            <div style="margin: 10px 30px 0px; width: 330px; height: 330px;"><img src="image/sunrin.png" alt="sunrin"></div>
+    </div>
+
+    <div id="curriculum">
+        <div class="curriculums">
+            <div><img src="image/dmigo.png" alt="testimg" style="width: 105px; height: 105;"></div >
+            <div>게임 개발</div>
+            <div class="line"></div>
+            <div class="text">
+               <p>기초적인 문법에서부터 Unity, 동아리 자체 엔진인 ZeroEngine 등을 이용한 PC게임 개발과 모바일 플랫폼, VR/AR등 다형성을 추구하는 게임 개발을 향해 나아가고 있습니다</p></div>
+                </div>
+        <div class="curriculums">
+            <div><img src="image/dmigo.png" alt="testimg" style="width: 105px; height: 105;"></div >
+            <div>게임 디자인</div>
+            <div class="line"></div>
+            <div class="text">Adobe Photoshop, illustrator 등을 통한 게임 일러스트에서부터 게임 애니메이션, 3DS MAX를 통한 3D모델링까지 심도적인 게임 그래픽 디자인에 대하여 배울 수 있습니다</div>
+        </div>
+        <div class="curriculums">
+            <div><img src="image/dmigo.png" alt="testimg" style="width: 105px; height: 105;"></div >
+            <div>게임 기획</div>
+            <div class="line"></div>
+            <div class="text">게임 개발자나 그래픽 아티스트라는 직군에 얽매이지 않고 자주 진행하는 팀 프로젝트와 깜짝 기획 수업을 통해 게임 장르와 요소에 대한 이해와 함께 창의적인 아이디어를 생각해내는 능력을 기를 수 있습니다</div>
+        </div>
+    </div>
+
+    <div id="Histoy">
+        <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+            <p style="font-size: 40px; margin: 0px; padding: 0px;"> 연혁</p>
+            <div class="line" style="width: 50px; margin-top: 30px;"></div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; margin-top: 30px; margin-left: 70px;">
+            <div class="ball"></div>
+            <div class="Line" style="margin-top: 5px;"></div>
+            <div class="Explanation">
+                <div class="year">
+                    <P style="font-size: 34px;">제로픈 동아리 창설</P>
+                    <div style="margin-left: 10px;">2006</div>
+                </div>
+                <div>오픈소스 게임 개발 동아리 Zer0pen 창설</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div  style="background-color: #939393; min-height: 1175px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: row; justify-content: flex-start" >
+            <div style="color: white;line-height: 85px; font-size: 40px;">활동내용</div>
+            <div style="background-color: #fcc419; width: 4px; height: 90px; margin: 0px 40px;"></div>
+
+            <div style="height: 100%;">
+                <p style="font-size: 14px; color: white; width: 440px; margin: 20px 0px;">자율적으로 진행하는 여러 동아리 활동들을 통해 선후배나 동기들과 함께
+                    즐거운 시간을 지난 한 해 동안 보냈습니다</p> </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; width: 70%; justify-content: center; margin-top: 30px;">
+            <div  class="box">
+                <div><img src="image/sunrin.png" alt="testimg" style="width: 100%;height: 155px;"></div>
+                <div style="font-size: 22px;font-weight: 700;">신입생 환영회</div>
+                <div class="line" style="height: 1px; width: 40px;"></div>
+                <div style="font-size: 14px;line-height: 20px;margin-top: 18px;">신입생 선발 면접 후 제로픈의 일원이 된 것을 환영하고 축하하기 위한 환영회를 진행하였습니다</div>
+            </div>
+            <div  class="box">
+                <div><img src="image/sunrin.png" alt="testimg" style="width: 100%;height: 155px;"></div>
+                <div style="font-size: 22px;font-weight: 700;">콘솔 게임 발표회</div>
+                <div class="line" style="height: 1px; width: 40px;"></div>
+                <div style="font-size: 14px;line-height: 20px;margin-top: 18px;">C언어와 콘솔 창을 이용한 게임을 기획하고 개발해 서로의 게임을 보여주는 발표회를 진행하였습니다</div>
+            </div>
+            <div  class="box">
+                <div><img src="image/sunrin.png" alt="testimg" style="width: 100%;height: 155px;"></div>
+                <div style="font-size: 22px;font-weight: 700;">일러스트 발표회</div>
+                <div class="line" style="height: 1px; width: 40px;"></div>
+                <div style="font-size: 14px;line-height: 20px;margin-top: 18px;">PhotoShop과 Illustrator를 이용해 각자가 구상하고 그린 일러스트를 서로에게 보여주는 발표회를 진행하였습니다.</div>
+            </div>
+            <div  class="box">
+                <div><img src="image/sunrin.png" alt="testimg" style="width: 100%;height: 155px;"></div>
+                <div style="font-size: 22px;font-weight: 700;">선린 축제</div>
+                <div class="line" style="height: 1px; width: 40px;"></div>
+                <div style="font-size: 14px;line-height: 20px;margin-top: 18px;">2018 선린 축제에서 제로픈은 굿즈 판매장과 VR 게임 체험장을 운영하며 즐거운 시간을 보냈습니다.</div>
+            </div>
+            <div  class="box">
+                <div><img src="image/sunrin.png" alt="testimg" style="width: 100%;height: 155px;"></div>
+                <div style="font-size: 22px;font-weight: 700;">여름방학 프로젝트</div>
+                <div class="line" style="height: 1px; width: 40px;"></div>
+                <div style="font-size: 14px;line-height: 20px;margin-top: 18px;">동아리 자체 엔진인 ZeroEngine을 이용하여 소프트웨어과와 멀티미디어과가 한 팀이 되어 게임을 개발하고, 발표하는 프로젝트를 진행하였습니다</div>
+            </div>
+            <div  class="box">
+                <div><img src="image/sunrin.png" alt="testimg" style="width: 100%;height: 155px;"></div>
+                <div style="font-size: 22px;font-weight: 700;">제로픈 송년회</div>
+                <div class="line" style="height: 1px; width: 40px;"></div>
+                <div style="font-size: 14px;line-height: 20px;margin-top: 18px;">제로픈의 선후배가 한자리에 모여 한 해동안 진행한 제로픈의 활동들을 정리하고 축하하는 송년회를 진행했습니다.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="header">
+        <div style="color: white;">클릭하여 면접 신청</div>
+        <div class="subtext" style="font-size: 60px;">면접 신청</div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
